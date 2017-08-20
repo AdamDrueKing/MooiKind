@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <!--Style Sheet-->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <!--MyScript-->
+    <script src="~/MyScript.js"></script>
+</head>
+<body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-family:'Brown Fox';font-size:12px">Mooi Kind</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/Index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:64225/Views/Blog.cshtml">Blog</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/Media.html">Hear Us</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/Gallery.html">See Us</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/Tour%20Schedule.html#contact">Catch Us</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/Shop.html">Shop Us</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/About.html">About Us</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="http://localhost:61709/Contact.html">Contact Us</a>
+                    </li>
+                    <!--<li class="">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+   
+    <!--FOOTER-->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
